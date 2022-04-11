@@ -7,6 +7,8 @@ Typescript is an open source language and is a superset of javaScrifa-pull-left
 - Includes most features from ES^, ES& (classes, arrow functions, etc)
 - Types from 3rd party libraries can be added with type definitions
 
+---
+
 in dynamically typed languages, the types are associated with run-time values and not named explicity in your code
 
 in statically typed languages, you explicity assign to variables, function parameters, return values, etc
@@ -14,4 +16,32 @@ in statically typed languages, you explicity assign to variables, function param
 Static Examples: Java, C, C++, Rust, Go
 Dynamic Examples: Javascript, Python, Ruby, PHP
 
+---
 
+PROS:
+
+- More robust
+- Easily spot bugs
+- Predictability
+- Readability
+- Popular
+
+CONS
+
+- More code to write
+- More to Learn
+- Required compilation
+- Not True static typing
+
+---
+
+Compiling Typescript
+
+- Typescript uses .ts and .tsx extensions
+- TSC (TypeScript Compiler) is used to compile .ts files down to JS
+- Can watch files and report errors at compile time
+- Many tools include TS compilation by default
+- MOst IDEs Have great support for TS
+- The tsconfig.json file is used to configure how TypeScript works
+
+---
