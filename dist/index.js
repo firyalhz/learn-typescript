@@ -42,10 +42,20 @@ let customerId = cid;
 function addNum(x, y) {
     return x + y;
 }
-console.log(addNum(1, 2));
+// console.log(addNum(1, 2));
 //Void
 function log(message) {
-    console.log(message);
+    // console.log(message);
 }
 log(2);
 log('text');
+const user1 = {
+    id: 1,
+    name: "John",
+};
+// type Point = number | string 
+// const p1: Point = 1
+user1.id = 2;
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+//Classes

@@ -53,12 +53,37 @@ function addNum(x: number, y: number): number{
   return x + y
 }
 
-console.log(addNum(1, 2));
+// console.log(addNum(1, 2));
 
 //Void
 function log(message: string | number): void {
-  console.log(message);
+  // console.log(message);
 }
 log(2)
 log('text')
 
+// Interfaces
+type UserInterface = {
+  id: number
+  name: string
+  age?: number
+};
+
+const user1: UserInterface = {
+  id: 1,
+  name: "John",
+};
+
+// type Point = number | string 
+// const p1: Point = 1
+
+user1.id = 2
+
+interface Mathfunc{
+  (x: number, y: number): number
+}
+
+const add: Mathfunc = (x: number, y: number): number => x + y;
+const sub: Mathfunc = (x: number, y: number): number => x - y;
+
+//Classes
