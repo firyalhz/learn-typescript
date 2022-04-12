@@ -4,7 +4,7 @@ let id = 5;
 // console.log('ID:', id);
 let company = 'Mappa';
 let isPublidhed = true;
-let x = 'Hello';
+let f = 'Hello';
 let age;
 age = 20;
 let ids = [1, 2, 3, 4, 5,];
@@ -30,8 +30,22 @@ var Direction1;
     Direction1["Left"] = "Left";
     Direction1["Right"] = "Right";
 })(Direction1 || (Direction1 = {}));
-console.log(Direction1.Left);
 const user = {
     id: 1,
     name: 'John'
 };
+// Type Assertion
+let cid = 1;
+// let customerId = <number>cid
+let customerId = cid;
+//Functions
+function addNum(x, y) {
+    return x + y;
+}
+console.log(addNum(1, 2));
+//Void
+function log(message) {
+    console.log(message);
+}
+log(2);
+log('text');

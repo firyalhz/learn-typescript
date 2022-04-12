@@ -3,7 +3,7 @@ let id: number = 5;
 // console.log('ID:', id);
 let company: string = 'Mappa'
 let isPublidhed: boolean = true
-let x: any = 'Hello'
+let f: any = 'Hello'
 let age: number 
 age = 20
 
@@ -30,7 +30,7 @@ enum Direction1 {
   Up = 'Up', Down = 'Down', Left = 'Left', Right = 'Right'
 }
 
-console.log(Direction1.Left);
+// console.log(Direction1.Left);
 
 //Objects
 type User = {
@@ -42,3 +42,23 @@ const user: User = {
   id: 1, 
   name: 'John'
 }
+
+// Type Assertion
+let cid: any = 1
+// let customerId = <number>cid
+let customerId = cid as number
+
+//Functions
+function addNum(x: number, y: number): number{
+  return x + y
+}
+
+console.log(addNum(1, 2));
+
+//Void
+function log(message: string | number): void {
+  console.log(message);
+}
+log(2)
+log('text')
+
