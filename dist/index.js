@@ -19,3 +19,15 @@ employee = [
     [2, "mikasa"],
     [3, "armin"],
 ];
+//Union
+let pid;
+pid = '22';
+//Enum
+var Direction1;
+(function (Direction1) {
+    Direction1["Up"] = "Up";
+    Direction1["Down"] = "Down";
+    Direction1["Left"] = "Left";
+    Direction1["Right"] = "Right";
+})(Direction1 || (Direction1 = {}));
+console.log(Direction1.Left);
