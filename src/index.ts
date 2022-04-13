@@ -86,8 +86,15 @@ interface Mathfunc{
 const add: Mathfunc = (x: number, y: number): number => x + y;
 const sub: Mathfunc = (x: number, y: number): number => x - y;
 
+
+type PersonInterface = {
+  id: number;
+  name: string;
+  register(): string
+};
+
 //Classes
-class Person {
+class Person implements PersonInterface{
   id: number
   name: string
 
@@ -96,8 +103,26 @@ class Person {
     this.name = name
     console.log(123);
   }
+
+  register(){
+    return `${this.name} is now registered`
+  }
 }
 
 const yal = new Person(1, 'Iyal')
 const yul = new Person(2, 'Iyul');
-console.log(yal, yul);
+
+// console.log(yal.register());
+// console.log(yal, yul);
+
+//subclasses
+class Employee extends Person {
+  position: string
+  constructor(id: number, name:string, position: string){
+    super(id, name)
+    this.position = position
+  }
+}
+
+const emp = new Employee(3, 'armin', 'Developer')
+console.log(emp.register());

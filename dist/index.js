@@ -65,7 +65,20 @@ class Person {
         this.name = name;
         console.log(123);
     }
+    register() {
+        return `${this.name} is now registered`;
+    }
 }
 const yal = new Person(1, 'Iyal');
 const yul = new Person(2, 'Iyul');
-console.log(yal, yul);
+// console.log(yal.register());
+// console.log(yal, yul);
+//subclasses
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, 'armin', 'Developer');
+console.log(emp.register());
