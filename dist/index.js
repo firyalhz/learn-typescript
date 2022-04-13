@@ -7,7 +7,7 @@ let isPublidhed = true;
 let f = 'Hello';
 let age;
 age = 20;
-let ids = [1, 2, 3, 4, 5,];
+let ids = [1, 2, 3, 4, 5];
 // ids.push(2)
 let arr = [1, true, 'Hello'];
 //Tuple
@@ -15,9 +15,9 @@ let person = [1, 'hello', true];
 //Tuple array
 let employee;
 employee = [
-    [1, "eren"],
-    [2, "mikasa"],
-    [3, "armin"],
+    [1, 'eren'],
+    [2, 'mikasa'],
+    [3, 'armin'],
 ];
 //Union
 let pid;
@@ -32,7 +32,7 @@ var Direction1;
 })(Direction1 || (Direction1 = {}));
 const user = {
     id: 1,
-    name: 'John'
+    name: 'John',
 };
 // Type Assertion
 let cid = 1;
@@ -51,9 +51,9 @@ log(2);
 log('text');
 const user1 = {
     id: 1,
-    name: "John",
+    name: 'John',
 };
-// type Point = number | string 
+// type Point = number | string
 // const p1: Point = 1
 user1.id = 2;
 const add = (x, y) => x + y;
