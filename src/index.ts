@@ -1,5 +1,5 @@
 //Basic types
-let id: number = 5;
+// let id: number = 5;
 // console.log('ID:', id);
 let company: string = 'Mappa'
 let isPublidhed: boolean = true
@@ -87,3 +87,17 @@ const add: Mathfunc = (x: number, y: number): number => x + y;
 const sub: Mathfunc = (x: number, y: number): number => x - y;
 
 //Classes
+class Person {
+  id: number
+  name: string
+
+  constructor(id: number, name: string){
+    this.id = id
+    this.name = name
+    console.log(123);
+  }
+}
+
+const yal = new Person(1, 'Iyal')
+const yul = new Person(2, 'Iyul');
+console.log(yal, yul);

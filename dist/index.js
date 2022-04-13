@@ -1,6 +1,6 @@
 "use strict";
 //Basic types
-let id = 5;
+// let id: number = 5;
 // console.log('ID:', id);
 let company = 'Mappa';
 let isPublidhed = true;
@@ -59,3 +59,13 @@ user1.id = 2;
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
 //Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+        console.log(123);
+    }
+}
+const yal = new Person(1, 'Iyal');
+const yul = new Person(2, 'Iyul');
+console.log(yal, yul);
